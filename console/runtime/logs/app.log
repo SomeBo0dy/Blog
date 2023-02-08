@@ -1,0 +1,890 @@
+2022-12-09 18:06:01 [-][-][-][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'You should configure "authManager" component to use database before executing this migration.' in C:\wamp\www\blog\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(45): m140506_102106_rbac_init->getAuthManager()
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(509): m140506_102106_rbac_init->up()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(130): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('', Array)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('migrate', Array)
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('migrate', Array)
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#12 {main}
+2022-12-09 18:05:55 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Users\\97908\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '416739ed-b41e-4653-9709-b7893a65e585'
+    'YII_PATH' => 'C:\\wamp\\www\\blog\\'
+    'PHP_SELF' => 'C:\\wamp\\www\\blog\\yii'
+    'SCRIPT_NAME' => 'C:\\wamp\\www\\blog\\yii'
+    'SCRIPT_FILENAME' => 'C:\\wamp\\www\\blog\\yii'
+    'PATH_TRANSLATED' => 'C:\\wamp\\www\\blog\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1670605555.1212
+    'REQUEST_TIME' => 1670605555
+    'argv' => [
+        0 => 'C:\\wamp\\www\\blog\\yii'
+        1 => 'migrate'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
+2023-01-10 09:18:02 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "view\count".' in C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view\\count', Array)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view\\count', Array)
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "view\count".' in C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php:179
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view\\count', Array)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#3 {main}
+2023-01-10 09:18:02 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\97908\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '7a9f3cf9-ada1-4fbe-9826-60f56b79a238'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673338682.5574
+    'REQUEST_TIME' => 1673338682
+    'argv' => [
+        0 => 'yii'
+        1 => 'view\\count'
+    ]
+    'argc' => 2
+]
+2023-01-10 09:18:25 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "viewController\count".' in C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('viewController\\...', Array)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('viewController\\...', Array)
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "viewController\count".' in C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php:179
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('viewController\\...', Array)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#3 {main}
+2023-01-10 09:18:25 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\97908\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '7a9f3cf9-ada1-4fbe-9826-60f56b79a238'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673338705.6968
+    'REQUEST_TIME' => 1673338705
+    'argv' => [
+        0 => 'yii'
+        1 => 'viewController\\count'
+    ]
+    'argc' => 2
+]
+2023-01-10 09:20:20 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\ViewController' in file: C:\wamp\www\blog/console/controllers/ViewController.php. Namespace missing?' in C:\wamp\www\blog\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(562): class_exists('console\\control...')
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('view')
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('view/count')
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#9 {main}
+2023-01-10 09:20:20 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\97908\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '4294e58d-e0a6-4885-bda3-463c0504a02f'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673338820.074
+    'REQUEST_TIME' => 1673338820
+    'argv' => [
+        0 => 'yii'
+        1 => 'view/count'
+    ]
+    'argc' => 2
+]
+2023-01-10 09:21:54 [-][-][-][error][yii\console\Exception] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "view\count".' in C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view\\count', Array)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view\\count', Array)
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\Exception' with message 'Unknown command "view\count".' in C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php:179
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view\\count', Array)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#3 {main}
+2023-01-10 09:21:54 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\97908\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '4294e58d-e0a6-4885-bda3-463c0504a02f'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673338914.7246
+    'REQUEST_TIME' => 1673338914
+    'argv' => [
+        0 => 'yii'
+        1 => 'view\\count'
+    ]
+    'argc' => 2
+]
+2023-01-10 09:22:08 [-][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'console\controllers\ViewController' in file: C:\wamp\www\blog/console/controllers/ViewController.php. Namespace missing?' in C:\wamp\www\blog\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('console\\control...')
+#1 [internal function]: spl_autoload_call('console\\control...')
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(562): class_exists('console\\control...')
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(520): yii\base\Module->createControllerByID('view')
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(448): yii\base\Module->createController('view/count')
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#9 {main}
+2023-01-10 09:22:08 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\97908\\Documents\\WindowsPowerShell\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{61c54bbd-c2c6-5271-96e7-009a87ff44bf}'
+    'WT_SESSION' => '4294e58d-e0a6-4885-bda3-463c0504a02f'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673338928.8376
+    'REQUEST_TIME' => 1673338928
+    'argv' => [
+        0 => 'yii'
+        1 => 'view/count'
+    ]
+    'argc' => 2
+]
+2023-01-11 16:59:07 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('visit_count')
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('visit_count')
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#12 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#13 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('date')
+#14 C:\wamp\www\blog\console\controllers\ViewController.php(13): yii\db\BaseActiveRecord->__set('date', '2023-01-11')
+#15 [internal function]: console\controllers\ViewController->actionCount()
+#16 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#19 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#20 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#21 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#22 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('visit_count')
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('visit_count')
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('date')
+#12 C:\wamp\www\blog\console\controllers\ViewController.php(13): yii\db\BaseActiveRecord->__set('date', '2023-01-11')
+#13 [internal function]: console\controllers\ViewController->actionCount()
+#14 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#17 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#18 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#19 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#20 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2023-01-11 16:59:03 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => '%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673452743.7761
+    'REQUEST_TIME' => 1673452743
+    'argv' => [
+        0 => 'yii'
+        1 => 'view/count'
+    ]
+    'argc' => 2
+]
+2023-01-12 16:59:07 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('visit_count')
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('visit_count')
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#12 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#13 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('date')
+#14 C:\wamp\www\blog\console\controllers\ViewController.php(13): yii\db\BaseActiveRecord->__set('date', '2023-01-12')
+#15 [internal function]: console\controllers\ViewController->actionCount()
+#16 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#19 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#20 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#21 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#22 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('visit_count')
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('visit_count')
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('date')
+#12 C:\wamp\www\blog\console\controllers\ViewController.php(13): yii\db\BaseActiveRecord->__set('date', '2023-01-12')
+#13 [internal function]: console\controllers\ViewController->actionCount()
+#14 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#17 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#18 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#19 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#20 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2023-01-12 16:59:03 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => '%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673539143.1548
+    'REQUEST_TIME' => 1673539143
+    'argv' => [
+        0 => 'yii'
+        1 => 'view/count'
+    ]
+    'argc' => 2
+]
+2023-01-13 16:59:06 [-][-][-][error][yii\redis\Connection] Failed to open redis DB connection (localhost:6379, database=0): 10061 - 由于目标计算机积极拒绝，无法连接。
+
+2023-01-13 16:59:06 [-][-][-][error][yii\db\Exception] exception 'yii\db\Exception' with message 'Failed to open redis DB connection (localhost:6379, database=0): 10061 - 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2-redis\Connection.php:294
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2-redis\Connection.php(383): yii\redis\Connection->open()
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2-redis\Connection.php(355): yii\redis\Connection->executeCommand('get', Array)
+#2 C:\wamp\www\blog\console\controllers\ViewController.php(14): yii\redis\Connection->__call('get', Array)
+#3 C:\wamp\www\blog\console\controllers\ViewController.php(14): yii\redis\Connection->get('view_count')
+#4 [internal function]: console\controllers\ViewController->actionCount()
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#12 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#13 {main}
+Additional Information:
+由于目标计算机积极拒绝，无法连接。
+
+2023-01-13 16:59:02 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => '%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1673625542.7704
+    'REQUEST_TIME' => 1673625542
+    'argv' => [
+        0 => 'yii'
+        1 => 'view/count'
+    ]
+    'argc' => 2
+]
+2023-01-27 16:59:21 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php:600
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(600): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(542): yii\db\Connection->createPdoInstance()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('visit_count')
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('visit_count')
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#12 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#13 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('date')
+#14 C:\wamp\www\blog\console\controllers\ViewController.php(13): yii\db\BaseActiveRecord->__set('date', '2023-01-27')
+#15 [internal function]: console\controllers\ViewController->actionCount()
+#16 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#17 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#18 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#19 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#20 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#21 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#22 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#23 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#24 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。
+' in C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php:547
+Stack trace:
+#0 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(861): yii\db\Connection->open()
+#1 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Connection.php(848): yii\db\Connection->getMasterPdo()
+#2 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\wamp\www\blog\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\wamp\www\blog\vendor\yiisoft\yii2\db\Schema.php(149): yii\db\mysql\Schema->loadTableSchema('visit_count')
+#8 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(296): yii\db\Schema->getTableSchema('visit_count')
+#9 C:\wamp\www\blog\vendor\yiisoft\yii2\db\ActiveRecord.php(330): yii\db\ActiveRecord::getTableSchema()
+#10 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(427): yii\db\ActiveRecord->attributes()
+#11 C:\wamp\www\blog\vendor\yiisoft\yii2\db\BaseActiveRecord.php(269): yii\db\BaseActiveRecord->hasAttribute('date')
+#12 C:\wamp\www\blog\console\controllers\ViewController.php(13): yii\db\BaseActiveRecord->__set('date', '2023-01-27')
+#13 [internal function]: console\controllers\ViewController->actionCount()
+#14 C:\wamp\www\blog\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Controller.php(119): yii\base\Controller->runAction('count', Array)
+#17 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('count', Array)
+#18 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(176): yii\base\Module->runAction('view/count', Array)
+#19 C:\wamp\www\blog\vendor\yiisoft\yii2\console\Application.php(143): yii\console\Application->runAction('view/count', Array)
+#20 C:\wamp\www\blog\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\wamp\www\blog\yii(27): yii\base\Application->run()
+#22 {main}
+Additional Information:
+
+2023-01-27 16:59:17 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\97908\\AppData\\Roaming'
+    'CLASSPATH' => '.;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\lib\\tools.jar'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'LAPTOP-R8RL39PA'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\97908'
+    'JAVA_HOME' => 'C:\\Users\\97908\\.jdks\\corretto-11.0.14.1'
+    'LINGO64_19_HOME' => 'C:\\LINGO64_19\\'
+    'LOCALAPPDATA' => 'C:\\Users\\97908\\AppData\\Local'
+    'LOGONSERVER' => '\\\\LAPTOP-R8RL39PA'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OneDrive' => 'C:\\Users\\97908\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\97908\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'D:\\ProgramData\\Anaconda3;D:\\ProgramData\\Anaconda3\\Library\\mingw-w64\\bin;D:\\ProgramData\\Anaconda3\\Library\\usr\\bin;D:\\ProgramData\\Anaconda3\\Library\\bin;D:\\ProgramData\\Anaconda3\\Scripts;C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\NVIDIA Corporation\\NVIDIA NvDLISR;C:\\Program Files\\dotnet\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\LINGO64_19\\;C:\\Program Files\\PuTTY\\;C:\\Program Files (x86)\\NetSarang\\Xshell 7\\;C:\\Program Files (x86)\\NetSarang\\Xftp 7\\;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\VisualSVN Server\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\bin;C:\\Users\\97908\\.jdks\\corretto-11.0.14.1\\jre\\bin;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\;C:\\Users\\97908\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\Bandizip\\;C:\\Users\\97908\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\97908\\AppData\\Roaming\\npm;C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;C:\\Users\\97908\\.dotnet\\tools;C:\\Users\\97908\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => 'a502'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => '%ProgramFiles%\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;C:\\Program Files\\VisualSVN Server\\PowerShellModules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.2.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'PyCharm_Community_Edition' => 'C:\\Program Files\\JetBrains\\PyCharm Community Edition 2022.2.2\\bin;'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\97908\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'LAPTOP-R8RL39PA'
+    'USERDOMAIN_ROAMINGPROFILE' => 'LAPTOP-R8RL39PA'
+    'USERNAME' => '97908'
+    'USERPROFILE' => 'C:\\Users\\97908'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'VISUALSVN_SERVER' => 'C:\\Program Files\\VisualSVN Server\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1674835157.4461
+    'REQUEST_TIME' => 1674835157
+    'argv' => [
+        0 => 'yii'
+        1 => 'view/count'
+    ]
+    'argc' => 2
+]
